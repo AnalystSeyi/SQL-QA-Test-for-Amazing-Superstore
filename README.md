@@ -1,1 +1,1 @@
-# SQL-QA-Test-for-Amazing-Superstore-Power-BI-Analysis
+# Quality Assurance Test For Amazing Superstore Power BI Analysis Using SQL
