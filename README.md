@@ -22,6 +22,8 @@
 1. The dataset was on two different sheets and had to be made into a CSV file before being connected to MySQL database.
    
    **Vlookup** was extensively used for this transformation. This transformation was done on Excel before loading into MySql.
+   
+      **=VLOOKUP(lookup_value, table_array, Match, [range_lookup])**
 
 ##
    - Table 1 <kbd>ListOfOrders</kbd>
@@ -34,10 +36,15 @@
 ![](Table2.png)
 
 ##
-   -  Table 2 <kbd>Merged_Table</kbd>
+   -  <kbd>Merged_Table</kbd>
 ##
    
 ![](Merged_Table.png)
+
+##
+   -  **Coverted to CSV**
+##
+
 
 
 
