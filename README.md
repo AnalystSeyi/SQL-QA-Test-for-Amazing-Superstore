@@ -19,7 +19,7 @@
 **Data Source:** SharePoint
 
 **Data Transformation/Cleaning:** Data cleaning and transformation were carried out using SQL Query.
-1. The dataset was on two different sheets and had to be made into a CSV file before being connected to MySQL database.
+#### 1. The dataset was on two different sheets and had to be made into a CSV file before being connected to MySQL database.
    
    **Vlookup** was extensively used for this transformation. This transformation was done on Excel before loading into MySql.
    
@@ -44,6 +44,23 @@
 ##
    -  **Coverted to CSV**
 ##
+
+![](Merged_CSV.png)
+
+**The CSV File was connected to MYSQL Server**
+
+##
+
+#### 2. Date Function Transformation: Date Transformation was a must because we will be carrying out **Time Inetlligence Functions.**
+
+The date is in the format of <kbd>DD-MM-YY</kbd> **Mysql** can only process dates in this format <kbd>YY-MM-DD.</kbd> 
+Therefore, date conversion is inevitable.
+This query is a modification query.
+
+![](Date_conversion.png)
+
+
+
 
 
 
