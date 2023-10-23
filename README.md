@@ -9,5 +9,35 @@
 
 **Stakeholder Requirement / Problem Statement:** Create a Superstore database in MySql, write SQL queries, and create a test document to QA the Superstore Dashboard developed in Power BI Software.
 1. Functional Validation: Test each feature as per the requirement. To verify all the filters and action filters on the report work as per the requirement
-2. Data Validation: Check the accuracy and quality of the data to match the value in the Power BI report with SQL queries.
+2. **Data Validation: Check the accuracy and quality of the data to match the value in the Power BI report with SQL queries.**
 3. Test Document: Create a test document that will contain the screenshots and queries used to test the reports.
+
+**Data Structure:** There are 2 tables in the dataset, which are named <kbd> Listoforders </kbd> and <kbd> Orderbreakdown </kbd>.
+
+## Analysis Pipeline Using SQL Queries
+
+**Data Source:** SharePoint
+
+**Data Transformation/Cleaning:** Data cleaning and transformation were carried out using SQL Query.
+1. The dataset was on two different sheets and had to be made into a CSV file before being connected to MySQL database.
+   
+   **Vlookup** was extensively used for this transformation. This transformation was done on Excel before loading into MySql.
+
+##
+   - Table 1 <kbd>ListOfOrders</kbd>
+##
+![](Table1.png)
+##
+   -  Table 2 <kbd>OrderBreakdown</kbd>
+##
+   
+![](Table2.png)
+
+##
+   -  Table 2 <kbd>Merged_Table</kbd>
+##
+   
+![](Merged_Table.png)
+
+
+
