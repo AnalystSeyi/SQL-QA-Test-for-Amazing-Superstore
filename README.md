@@ -68,10 +68,45 @@ For Live Visualization click here <kbd>[Live-Visualization](https://app.powerbi.
 <br><br>
 
 **SQL Software:** MySQL
+##
+### A. KPI
+##
+<br>**1. Total Order** 
 
-## KPI
+     select count(`Order ID`) as Total_Order from amazingsuperstore;
+     
+**Output:**
 
-**1. Total** 
+![](Total_Order.png)
+##
+<br>**2. Total Sales** 
+
+     select sum(Sales) as Total_Sales from amazingsuperstore;
+     
+**Output:**
+
+![](Total_Sales.png)
+
+##
+<br>**3. Total Profit** 
+
+     select sum(Profit) as Total_Profit from amazingsuperstore;
+     
+**Output:**
+
+![](Total_Profit.png)
+
+##
+<br>**4. Percentage Profit** 
+
+     select round((sum(Profit) / sum(Sales) ) * 100, 0) as Percentage_Profit FROM amazingsuperstore; 
+     Converted to 0 decima
+     
+**Output:**
+
+![](Percentage_Profit.png)
+
+
 
 
 
