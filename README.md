@@ -152,12 +152,118 @@ For Live Visualization click here <kbd>[Live-Visualization](https://app.powerbi.
 ##
 <br>**8. Total Order by Year** 
 
-     select count(`Order ID`) as Office_Supplies from amazingsuperstore where Category='Office Supplies';
+     select   year(`Order Date`) as Year, count(`Order ID`) as Total_order from amazingsuperstore group by year(`Order Date`);
      
 **Output:**
 
-![](Product_category_office_supply.png)
+![](Total_Profit_by_year.png)
+
+##
+<br>**9. Total Sales by Year** 
+
+     select   year(`Order Date`) as Year, sum(Sales) as Total_Sales from amazingsuperstore group by year(`Order Date`);
+     
+**Output:**
+
+![](Total_sales_by_year.png)
+
+##
+<br>**10. Total Profit by Year** 
+
+     select   year(`Order Date`) as Year, sum(Profit) as Total_Sales from amazingsuperstore group by year(`Order Date`);
+     
+**Output:**
+
+![](Total_Profit_by_year.png)
+
+##
+<br>**11. Cost of Sales by Year** 
+
+     Calculating cost of sales
+     
+     select   year(`Order Date`) as Year,  (sum(Sales) - sum(Profit)) as Cost_of_sales from amazingsuperstore group by year(`Order Date`);
+
+     
+**Output:**
+
+![](Total_cost_of_sale_by_year.png)
+
+##
+<br>**12. Year on Year Growth** 
+
+Calculating cost of sales
+     
+     select year(`Order Date`) as Current_Year, sum(profit) as Total_Profit from amazingsuperstore group by  year(`Order Date`);
+     select sum(profit) as Total_Profit from amazingsuperstore where  year(`Order Date`)='2011';
+     select sum(profit) as Total_Profit from amazingsuperstore where  year(`Order Date`)='2012';
+     select sum(profit) as Total_Profit from amazingsuperstore where  year(`Order Date`)='2013';
+     select sum(profit) as Total_Profit from amazingsuperstore where  year(`Order Date`)='2014'; 
+
+Year on Year Growth for year 2012:
+ 
+     select round( (sum(profit) / (select sum(profit) as Total_Profit from amazingsuperstore where  year(`Order Date`)='2011') - 1) * 100, 2) as YOY_Growth  
+     from amazingsuperstore where  year(`Order Date`)='2012';
+     
+**Output:**
+
+![](2012_Profit_Growth.png)
+
+Year on Year Growth for year 2013:
+     
+     select round( (sum(profit) / (select sum(profit) as Total_Profit from amazingsuperstore where  year(`Order Date`)='2012') - 1) * 100, 2) as YOY_Growth  
+     from amazingsuperstore where  year(`Order Date`)='2013';
+
+**Output:**
+
+![](2013_Profit_Growth.png)
+
+Year on Year Growth for year 2014:
+
+     select round( (sum(profit) / (select sum(profit) as Total_Profit from amazingsuperstore where  year(`Order Date`)='2013') - 1) * 100, 2) as YOY_Growth  
+     from amazingsuperstore where  year(`Order Date`)='2014';
+
+     
+**Output:**
+
+![](Year_on_Year_Growth.png)
+
+##
+### C. Profit with or without Discount
+##
+<br>**13. Profit with Discount** 
+
+     select sum(Profit) as Profit_before_Discount FROM amazingsuperstore;
+
+     
+**Output:**
+
+![](Total_Profit.png)
+
+##
+<br>**14. Profit without Discount** 
+
+**Cost of sales:**
+
+      select  sum(`Sales` - `Profit`) as Cost_of_Sales FROM amazingsuperstore;
+
+     
+**Output:**
+
+![](cost-of-sales.png)
+
+**Selling Price before Discount:**
+
+    select  sum(`Sales` / (1 - `Discount`)) as Price_Before_Discount FROM amazingsuperstore;
+
+**Output:**
+
+![](Selling_Price_B4_Discount.png)
 
 
+**Profit before discount:**
 
+     select  round( sum(`Sales` / (1 - `Discount`)) - sum(`Sales` - `Profit`)  , 0) as Profit_before_Discount FROM amazingsuperstore;
 
+**Output:**
+
+![](Profit_without_discount.png)
