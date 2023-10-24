@@ -62,6 +62,18 @@ This query is a modification query.
 <br><br>
 ## Analysis
 
+**Data Validation: QA check for the Power BI live report with SQL queries.**
+
+For Live Visualization click here <kbd>[Live-Visualization](https://app.powerbi.com/view?r=eyJrIjoiMzczYjA0YzItYTgzZi00MTk0LTk4ZTYtN2U4MDdjYzk2ZjQ3IiwidCI6IjU0OGU5MDRlLTY2MDEtNGQ0My1iZmY3LTYzZGRlZTRjOWVlNiJ9&pageName=ReportSectiona0423d4498c17d5c245d)</kbd>
+<br><br>
+
+**SQL Software:** MySQL
+
+## KPI
+
+**1. Total** 
+
+
 
 
 
