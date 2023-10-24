@@ -57,7 +57,19 @@ The date is in the format of <kbd>DD-MM-YY</kbd> **Mysql** can only process date
 Therefore, date conversion is inevitable.
 This query is a modification query.
 
-![](Date_conversion.png)
+         use amazingmart;
+         SELECT * FROM amazingsuperstore;
+         alter table amazingsuperstore modify column `Order Date` varchar(20);
+         alter table amazingsuperstore modify column `Ship Date` varchar(20);
+         desc amazingsuperstore;
+         update amazingsuperstore set `Order Date` = str_to_date(`Order Date`, '%m/%d/%Y');
+         select date_format(str_to_date(`Order Date`, '%m/%d/%Y'), '%d/%m/%Y') as dateformat from amazingsuperstore;
+
+         update amazingsuperstore set `Ship Date` = str_to_date(`Ship Date`, '%m/%d/%Y');
+         select date_format(str_to_date(`Ship Date`, '%m/%d/%Y'), '%d/%m/%Y') as dateformat from amazingsuperstore;
+         SELECT * FROM amazingsuperstore;
+
+<br>![](Date_conversion.png)
 
 <br><br>
 ## Analysis
@@ -106,10 +118,45 @@ For Live Visualization click here <kbd>[Live-Visualization](https://app.powerbi.
 
 ![](Percentage_Profit.png)
 
+##
+### B. Product Category
+##
+<br>**5. Office Supply** 
 
+     select count(`Order ID`) as Office_Supplies from amazingsuperstore where Category='Office Supplies';
+     
+**Output:**
 
+![](Product_category_office_supply.png)
 
+##
+<br>**6. Furniture** 
 
+     select count(`Order ID`) as Office_Supplies from amazingsuperstore where Category='Furniture';
+     
+**Output:**
+
+![](Product_category_Furniture.png)
+
+##
+<br>**7. Technology** 
+
+     select count(`Order ID`) as Office_Supplies from amazingsuperstore where Category='Technology';
+     
+**Output:**
+
+![](Product_category_Technology.png)
+
+##
+### C. Performance by Year
+##
+<br>**8. Total Order by Year** 
+
+     select count(`Order ID`) as Office_Supplies from amazingsuperstore where Category='Office Supplies';
+     
+**Output:**
+
+![](Product_category_office_supply.png)
 
 
 
