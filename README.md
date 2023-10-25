@@ -240,7 +240,13 @@ Year on Year Growth for year 2014:
 ![](Total_Profit.png)
 
 ##
-<br>**14. Profit without Discount** 
+<br>**14. Profit without Discount** <br>
+
+**Statistics:** <br>
+cost of sales = Selling price - Profit<br>
+Selling price before discount = selling Price / (1 - discount)<br>
+The Discount is in decimals, that is why am using 1 and not 100<br>
+Profit without discount = Selling price before Discount - Cost of Sales<br>
 
 **Cost of sales:**
 
@@ -267,3 +273,48 @@ Year on Year Growth for year 2014:
 **Output:**
 
 ![](Profit_without_discount.png)
+
+##
+<br>**15. Percentage Profit without Discount** 
+
+    select  round( ((sum(`Sales` / (1 - `Discount`)) - sum(`Sales` - `Profit`)) / sum(sales)) * 100, 0) as Profit_before_Discount FROM amazingsuperstore;
+     Converted to 0 decima
+     
+**Output:**
+
+![](Percentage_Profit_Without_Discount.png)
+
+
+##
+### D. Profit Comparism
+##
+<br>**16. Percentage of Profit with Discount to Profit without Disco** 
+
+    select  round( ( sum(Profit) / ( sum(`Sales` / (1 - `Discount`)) - sum(`Sales` - `Profit`) )) * 100, 1) as Profit_before_Discount FROM amazingsuperstore;
+     Converted to 0 decima
+     
+**Output:**
+
+![](Percentage_profit_with&without_Discount.png)
+
+##
+### E. Profit With & Without Discount By Year
+##
+<br>**17. Profit with Discount by Year** 
+
+    select  year(`Order Date`) as Year, sum(Profit) as Profit_before_Discount FROM amazingsuperstore group by  year(`Order Date`);
+     
+**Output:**
+
+![](Total_Profit_by_year.png)
+
+##
+<br>**18.Profit Without Discount by Year** 
+
+    select year(`Order Date`) as Year,  round( sum(`Sales` / (1 - `Discount`)) - sum(`Sales` - `Profit`)  , 0) as Profit_before_Discount FROM amazingsuperstore group by year(`Order Date`) ;
+     
+**Output:**
+
+![](Profit_without_Discount_by_Year.png)
+
+
