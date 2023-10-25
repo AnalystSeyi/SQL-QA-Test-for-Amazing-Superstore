@@ -389,3 +389,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 
 
 ![](Discount_by_profit.png)
+
+##
+### Result: The report is quality assured.
+##
