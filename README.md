@@ -19,42 +19,42 @@
 **Data Source:** SharePoint
 
 **Data Transformation/Cleaning:** Data cleaning and transformation were carried out using SQL Query.
-#### 1. The dataset was on two different sheets and had to be made into a CSV file before being connected to MySQL database.
+#### 1. The dataset was on two different sheets and had to be made into a CSV file before being connected to the MySQL database.
    
-   **Vlookup** was extensively used for this transformation. This transformation was done on Excel before loading into MySql.
+   **Vlookup** was extensively used for this transformation. This transformation was done on Excel before loading into MySQL.
    
-      **=VLOOKUP(lookup_value, table_array, Match, [range_lookup])**
+      =VLOOKUP(lookup_value, table_array, Match, [range_lookup])
 
 ##
-   - Table 1 <kbd>ListOfOrders</kbd>
+   - Table 1 : The table name is <kbd>ListOfOrders</kbd>
 ##
 ![](Table1.png)
 ##
-   -  Table 2 <kbd>OrderBreakdown</kbd>
+   -  Table 2: The table name is <kbd>OrderBreakdown</kbd>
 ##
    
 ![](Table2.png)
 
 ##
-   -  <kbd>Merged_Table</kbd>
+   -  <kbd>Merged_Table</kbd> The two tables above are merged into one.
 ##
    
 ![](Merged_Table.png)
 
 ##
-   -  **Coverted to CSV**
+   -  **The Merged table was Converted to CSV**
 ##
 
 ![](Merged_CSV.png)
 
-**The CSV File was connected to MYSQL Server**
+**The CSV File was connected to MYSQL database Server**
 
 ##
 
-#### 2. Date Function Transformation: Date Transformation was a must because we will be carrying out **Time Inetlligence Functions.**
+#### 2. Date Function Transformation: This is neccessary for **Time Inetlligence Functions.**
 
-The date is in the format of <kbd>DD-MM-YY</kbd> **Mysql** can only process dates in this format <kbd>YY-MM-DD.</kbd> 
-Therefore, date conversion is inevitable.
+The date is in the format of <kbd>DD-MM-YY</kbd>. <br> **Mysql** can only process dates in this format <kbd>YY-MM-DD.</kbd> <br>
+Therefore, date conversion is inevitable.<br>
 This query is a modification query.
 
          use amazingmart;
@@ -76,7 +76,7 @@ This query is a modification query.
 
 **Data Validation: QA check for the Power BI live report with SQL queries.**
 
-For Live Visualization click here <kbd>[Live-Visualization](https://app.powerbi.com/view?r=eyJrIjoiMzczYjA0YzItYTgzZi00MTk0LTk4ZTYtN2U4MDdjYzk2ZjQ3IiwidCI6IjU0OGU5MDRlLTY2MDEtNGQ0My1iZmY3LTYzZGRlZTRjOWVlNiJ9&pageName=ReportSectiona0423d4498c17d5c245d)</kbd>
+For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app.powerbi.com/view?r=eyJrIjoiMzczYjA0YzItYTgzZi00MTk0LTk4ZTYtN2U4MDdjYzk2ZjQ3IiwidCI6IjU0OGU5MDRlLTY2MDEtNGQ0My1iZmY3LTYzZGRlZTRjOWVlNiJ9&pageName=ReportSectiona0423d4498c17d5c245d)</kbd>
 <br><br>
 
 **SQL Software:** MySQL
@@ -228,7 +228,7 @@ Year on Year Growth for year 2014:
 ![](Year_on_Year_Growth.png)
 
 ##
-### C. Profit with or without Discount
+### D. Profit with or without Discount
 ##
 <br>**13. Profit with Discount** 
 
@@ -286,7 +286,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 
 
 ##
-### D. Profit Comparism
+### E. Profit Comparism
 ##
 <br>**16. Percentage of Profit with Discount to Profit without Disco** 
 
@@ -298,7 +298,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 ![](Percentage_profit_with&without_Discount.png)
 
 ##
-### E. Profit With & Without Discount By Year
+### F. Profit With & Without Discount By Year
 ##
 <br>**17. Profit with Discount by Year** 
 
@@ -318,7 +318,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 ![](Profit_without_Discount_by_Year.png)
 
 ##
-### F. Profit by Discount
+### G. Profit by Discount
 ##
 <br>**19. Profit by Discount** 
 
@@ -365,7 +365,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 ![](Total_order_greater_30.png)
 
 ##
-### G.19 Total Order, Profit and Max Discount by Country
+### H.19 Total Order, Profit and Max Discount by Country
 ##
 <br>
 
@@ -378,7 +378,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 ![](Country,Total_order,profit,Max_Disount.png)
 
 ##
-### H.20 Discount by Profit
+### I.20 Discount by Profit
 ##
 <br>
 
