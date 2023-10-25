@@ -335,5 +335,57 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Profit_of_less_than_ 20.png)
+![](Profit_of_less.png)
 
+##
+<br>**21. Total Number from <= 20%** 
+
+    select count(`Order ID`) as Profit FROM amazingsuperstore where `Discount` between 0 and 0.2;
+     
+**Output:**
+
+![](Total_no_order_less_than.png)
+
+##
+<br>**22. Profit made from >= 30% Discount sales** 
+
+    select  sum(Profit) as Profit FROM amazingsuperstore where `Discount` between 0.3 and 1;
+     
+**Output:**
+
+![](profit_greater_30.png)
+
+##
+<br>**23. Total Number of Order >= 30%** 
+
+    select  sum(Profit) as Profit FROM amazingsuperstore where `Discount` between 0.3 and 1;
+     
+**Output:**
+
+![](Total_order_greater_30.png)
+
+##
+### G.19 Total Order, Profit and Max Discount by Country
+##
+<br>
+
+     select Country, count(`Order ID`) as Total_Order , sum(Profit) as Profit, max(Discount) as Max_Discount FROM amazingsuperstore group by Country order by sum(Profit) desc ;
+     
+
+**Output:**
+
+
+![](Country,Total_order,profit,Max_Disount.png)
+
+##
+### H.20 Discount by Profit
+##
+<br>
+
+     select  Discount, sum(Profit) as Profit FROM amazingsuperstore group by Discount order by Discount asc;
+     
+
+**Output:**
+
+
+![](Discount_by_profit.png)
