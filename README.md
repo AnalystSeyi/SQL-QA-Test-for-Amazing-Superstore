@@ -317,4 +317,23 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 
 ![](Profit_without_Discount_by_Year.png)
 
+##
+### F. Profit by Discount
+##
+<br>**19. Profit by Discount** 
+
+    select  `Discount`, sum(Profit) as Profit FROM amazingsuperstore group by `Discount` order by `Discount` asc;
+     
+**Output:**
+
+![](Discount_by_profit.png)
+
+##
+<br>**20. Profit made from <= 20% Discount sales** 
+
+    select  sum(Profit) as Profit FROM amazingsuperstore where `Discount` between 0 and 0.2;
+     
+**Output:**
+
+![](Profit_of_less_than_ 20.png)
 
