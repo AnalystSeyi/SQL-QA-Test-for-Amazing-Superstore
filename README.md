@@ -1,7 +1,7 @@
 ##
 # Quality Assurance Test For Amazing Superstore Power BI Analysis Using SQL
 
-![](Sql_codes.webp)
+![](Screenshot/Sql_codes.webp)
 <br><br>
 ## Introduction
 
@@ -28,24 +28,24 @@
 ##
    - Table 1 : The table name is <kbd>ListOfOrders</kbd>
 ##
-![](Table1.png)
+![](Screenshot/Table1.png)
 ##
    -  Table 2: The table name is <kbd>OrderBreakdown</kbd>
 ##
    
-![](Table2.png)
+![](Screenshot/Table2.png)
 
 ##
    -  <kbd>Merged_Table</kbd> The two tables above are merged into one.
 ##
    
-![](Merged_Table.png)
+![](Screenshot/Merged_Table.png)
 
 ##
    -  **The Merged table was Converted to CSV**
 ##
 
-![](Merged_CSV.png)
+![](Screenshot/Merged_CSV.png)
 
 **The CSV File was connected to MYSQL database Server**
 
@@ -69,7 +69,7 @@ This query is a modification query.
          select date_format(str_to_date(`Ship Date`, '%m/%d/%Y'), '%d/%m/%Y') as dateformat from amazingsuperstore;
          SELECT * FROM amazingsuperstore;
 
-<br>![](Date_conversion.png)
+<br>![](Screenshot/Date_conversion.png)
 
 <br><br>
 ## Analysis
@@ -89,7 +89,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Total_Order.png)
+![](Screenshot/Total_Order.png)
 ##
 <br>**2. Total Sales** 
 
@@ -97,7 +97,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Total_Sales.png)
+![](Screenshot/Total_Sales.png)
 
 ##
 <br>**3. Total Profit** 
@@ -106,7 +106,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Total_Profit.png)
+![](Screenshot/Total_Profit.png)
 
 ##
 <br>**4. Percentage Profit** 
@@ -116,7 +116,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Percentage_Profit.png)
+![](Screenshot/Percentage_Profit.png)
 
 ##
 ### B. Product Category
@@ -127,7 +127,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Product_category_office_supply.png)
+![](Screenshot/Product_category_office_supply.png)
 
 ##
 <br>**6. Furniture** 
@@ -136,7 +136,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Product_category_Furniture.png)
+![](Screenshot/Product_category_Furniture.png)
 
 ##
 <br>**7. Technology** 
@@ -145,7 +145,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Product_category_Technology.png)
+![](Screenshot/Product_category_Technology.png)
 
 ##
 ### C. Performance by Year
@@ -156,7 +156,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Total_Profit_by_year.png)
+![](Screenshot/Total_Profit_by_year.png)
 
 ##
 <br>**9. Total Sales by Year** 
@@ -165,7 +165,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Total_sales_by_year.png)
+![](Screenshot/Total_sales_by_year.png)
 
 ##
 <br>**10. Total Profit by Year** 
@@ -174,7 +174,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Total_Profit_by_year.png)
+![](Screenshot/Total_Profit_by_year.png)
 
 ##
 <br>**11. Cost of Sales by Year** 
@@ -186,7 +186,7 @@ For Power BI Live Visualization click here <kbd>[Live-Visualization](https://app
      
 **Output:**
 
-![](Total_cost_of_sale_by_year.png)
+![](Screenshot/Total_cost_of_sale_by_year.png)
 
 ##
 <br>**12. Year on Year Growth** 
@@ -206,7 +206,7 @@ Year on Year Growth for year 2012:
      
 **Output:**
 
-![](2012_Profit_Growth.png)
+![](Screenshot/2012_Profit_Growth.png)
 
 Year on Year Growth for year 2013:
      
@@ -215,7 +215,7 @@ Year on Year Growth for year 2013:
 
 **Output:**
 
-![](2013_Profit_Growth.png)
+![](Screenshot/2013_Profit_Growth.png)
 
 Year on Year Growth for year 2014:
 
@@ -225,7 +225,7 @@ Year on Year Growth for year 2014:
      
 **Output:**
 
-![](Year_on_Year_Growth.png)
+![](Screenshot/Year_on_Year_Growth.png)
 
 ##
 ### D. Profit with or without Discount
@@ -237,7 +237,7 @@ Year on Year Growth for year 2014:
      
 **Output:**
 
-![](Total_Profit.png)
+![](Screenshot/Total_Profit.png)
 
 ##
 <br>**14. Profit without Discount** <br>
@@ -255,7 +255,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](cost-of-sales.png)
+![](Screenshot/cost-of-sales.png)
 
 **Selling Price before Discount:**
 
@@ -263,7 +263,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 
 **Output:**
 
-![](Selling_Price_B4_Discount.png)
+![](Screenshot/Selling_Price_B4_Discount.png)
 
 
 **Profit before discount:**
@@ -272,7 +272,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 
 **Output:**
 
-![](Profit_without_discount.png)
+![](Screenshot/Profit_without_discount.png)
 
 ##
 <br>**15. Percentage Profit without Discount** 
@@ -282,7 +282,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Percentage_Profit_Without_Discount.png)
+![](Screenshot/Percentage_Profit_Without_Discount.png)
 
 
 ##
@@ -295,7 +295,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Percentage_profit_with&without_Discount.png)
+![](Screenshot/Percentage_profit_with&without_Discount.png)
 
 ##
 ### F. Profit With & Without Discount By Year
@@ -306,7 +306,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Total_Profit_by_year.png)
+![](Screenshot/Total_Profit_by_year.png)
 
 ##
 <br>**18.Profit Without Discount by Year** 
@@ -315,7 +315,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Profit_without_Discount_by_Year.png)
+![](Screenshot/Profit_without_Discount_by_Year.png)
 
 ##
 ### G. Profit by Discount
@@ -326,7 +326,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Discount_by_profit.png)
+![](Screenshot/Discount_by_profit.png)
 
 ##
 <br>**20. Profit made from <= 20% Discount sales** 
@@ -335,7 +335,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Profit_of_less.png)
+![](Screenshot/Profit_of_less.png)
 
 ##
 <br>**21. Total Number from <= 20%** 
@@ -344,7 +344,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Total_no_order_less_than.png)
+![](Screenshot/Total_no_order_less_than.png)
 
 ##
 <br>**22. Profit made from >= 30% Discount sales** 
@@ -353,7 +353,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](profit_greater_30.png)
+![](Screenshot/profit_greater_30.png)
 
 ##
 <br>**23. Total Number of Order >= 30%** 
@@ -362,7 +362,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
      
 **Output:**
 
-![](Total_order_greater_30.png)
+![](Screenshot/Total_order_greater_30.png)
 
 ##
 ### H.19 Total Order, Profit and Max Discount by Country
@@ -375,7 +375,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 **Output:**
 
 
-![](Country,Total_order,profit,Max_Disount.png)
+![](Screenshot/Country,Total_order,profit,Max_Disount.png)
 
 ##
 ### I.20 Discount by Profit
@@ -388,7 +388,7 @@ Profit without discount = Selling price before Discount - Cost of Sales<br>
 **Output:**
 
 
-![](Discount_by_profit.png)
+![](Screenshot/Discount_by_profit.png)
 
 ##
 ### Result: The report is quality assured.
